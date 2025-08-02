@@ -6,6 +6,7 @@ import New from './views/New.vue';
 import Show from './views/Show.vue';
 import Edit from './views/Edit.vue';
 import Test from './views/Test.vue'; // Import each view component and their paths.
+import About from './views/About.vue';
 
 
 Vue.use(Router); // Initializes the vue-router plugin, allows you to use plugin features like router-link and router-view in other files.
@@ -48,6 +49,12 @@ export default new Router({
             path: '/test',
             name: 'test',
             component: Test
+        },
+
+        {
+            path: '/about',
+            name: 'About',
+            component: About
         }
 
     ]
